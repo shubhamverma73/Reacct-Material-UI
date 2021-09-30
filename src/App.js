@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
+import Navbar from './components/layouts/Navigation';
+import UIButton from './components/UIButton';
+import UISlider from './components/UISlider';
+import UICheckbox from './components/UICheckbox';
+import UISelect from './components/UISelect';
+import UIText from './components/UIText';
+import UISwitch from './components/UISwitch';
+import UIBox from './components/UIBox';
+import UIGrid from './components/UIGrid';
+import UITab from './components/UITab';
+import UITable from './components/UITable';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <>
+		  	<Router>
+			  	<Navbar />
+			  	<Switch>
+				  	<Route exact path="/ui-button" component={UIButton} />
+				  	<Route exact path="/ui-slider" component={UISlider} />
+				  	<Route exact path="/ui-checkbox" component={UICheckbox} />
+				  	<Route exact path="/ui-select" component={UISelect} />
+				  	<Route exact path="/ui-text" component={UIText} />
+				  	<Route exact path="/ui-switch" component={UISwitch} />
+				  	<Route exact path="/ui-box" component={UIBox} />
+				  	<Route exact path="/ui-grid" component={UIGrid} />
+				  	<Route exact path="/ui-tab" component={UITab} />
+				  	<Route exact path="/ui-table" component={UITable} />
+				</Switch>
+			</Router>
+          </>
   );
 }
 
