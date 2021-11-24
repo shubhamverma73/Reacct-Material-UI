@@ -50,6 +50,12 @@ const Navigation = () => {
 					<MenuItem onClick={closeMenu}>
 						<NavLink className="nav-link" to="/ui-table"><i className="fa fa-user"></i> Table</NavLink>
 					</MenuItem>
+					<MenuItem onClick={closeMenu}>
+						<NavLink className="nav-link" to="/ui-card"><i className="fa fa-user"></i> Card</NavLink>
+					</MenuItem>
+					<MenuItem onClick={closeMenu}>
+						<NavLink className="nav-link" to="/api-data"><i className="fa fa-user"></i> API Data</NavLink>
+					</MenuItem>
 				</Menu>
 			</div>
 		</>

@@ -12,6 +12,8 @@ import UIBox from './components/UIBox';
 import UIGrid from './components/UIGrid';
 import UITab from './components/UITab';
 import UITable from './components/UITable';
+import UICard from './components/UICard';
+import UIApiData from './components/UIApiData';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
 				  	<Route exact path="/ui-grid" component={UIGrid} />
 				  	<Route exact path="/ui-tab" component={UITab} />
 				  	<Route exact path="/ui-table" component={UITable} />
+				  	<Route exact path="/ui-card" component={UICard} />
+				  	<Route exact path="/api-data" component={UIApiData} />
 				</Switch>
 			</Router>
           </>

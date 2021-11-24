@@ -49,6 +49,8 @@ const UIBox = () => {
 
 	];
 
+	console.log(data);
+
 	return (
 		<>
 			<div style={{ width: "100%", paddingTop: "20px" }}>
@@ -70,7 +72,8 @@ const UIBox = () => {
 							if (index % 2) {
 								return { backgroundColor: "#f2f2f2" }
 							}
-						}
+						},
+						filtering: true
 					}}
 					actions={[
 						{
